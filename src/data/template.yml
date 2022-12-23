@@ -1,0 +1,12 @@
+# template
+
+name: name
+
+windows:
+  - window-name:
+      root: root
+      layout: deca,127x32,0,0[127x24,0,0,41,127x7,0,25{63x7,0,25,39,63x7,64,25,40}]
+      panes:
+        - nvim
+        - null
+        - null

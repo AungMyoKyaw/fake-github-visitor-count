@@ -1,0 +1,10 @@
+# template
+
+name: name
+
+windows:
+  - window-name:
+      root: root
+      layout: main-horizontal
+      panes:
+        - nvim

@@ -1,0 +1,49 @@
+{
+  "name": "fake-github-visitor-count",
+  "version": "1.0.0",
+  "description": "fake github visitor count",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "format": "prettier --write .",
+    "demo": "node src/cli.js --count=10 --username=AungMyoKyaw",
+    "demo:help": "node src/cli.js --help"
+  },
+  "bin": {
+    "fake-gh-visitor": "./src/cli.js",
+    "fake-github-visitor": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "assets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AungMyoKyaw/fake-github-visitor-count.git"
+  },
+  "keywords": [
+    "fake",
+    "github",
+    "visitor",
+    "count"
+  ],
+  "author": "Aung Myo Kyaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AungMyoKyaw/fake-github-visitor-count/issues"
+  },
+  "homepage": "https://github.com/AungMyoKyaw/fake-github-visitor-count#readme",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "meow": "^11.0.0",
+    "ora": "^6.1.2",
+    "user-agents": "^1.0.1238"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=12.22.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1"
+  }
+}

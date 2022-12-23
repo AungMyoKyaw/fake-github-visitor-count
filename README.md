@@ -32,7 +32,7 @@ Examples
     $ fake-github-visitor --username=AungMyoKyaw --count=10
 ```
 
-> it will send request with random user agent for each req time
+> it will send every request with random user agent
 
 ## License
 

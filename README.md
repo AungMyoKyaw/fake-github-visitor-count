@@ -32,6 +32,8 @@ Examples
     $ fake-github-visitor --username=AungMyoKyaw --count=10
 ```
 
+> it will send request with random user agent for each req time
+
 ## License
 
 MIT © [Aung Myo Kyaw](https://github.com/AungMyoKyaw)

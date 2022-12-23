@@ -14,8 +14,7 @@
     "fake-github-visitor": "./src/cli.js"
   },
   "files": [
-    "src",
-    "assets"
+    "src"
   ],
   "repository": {
     "type": "git",

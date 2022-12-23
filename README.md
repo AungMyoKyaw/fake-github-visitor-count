@@ -8,6 +8,8 @@ fake visitor count for github visitor count badge
 
 u can install this badge like this
 
+[![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=AungMyoKyaw)](https://github.com/AungMyoKyaw)
+
 ```txt
 [![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=AungMyoKyaw)](https://github.com/AungMyoKyaw)
 ```

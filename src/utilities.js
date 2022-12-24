@@ -12,13 +12,19 @@ class GithubVisitor {
 
   get spinnerText() {
     const { count, fakedCount } = this;
-    const spinnerText = `Faking Github Visitor Count ${fakedCount}/${count}`;
+    const spinnerText = `Faking Github Visitor Count for ${this.username} ${fakedCount}/${count}`;
     return spinnerText;
   }
 
   get succeedSpinnerText() {
     const { count, fakedCount } = this;
-    const spinnerText = `Faked Github Visitor Count => ${fakedCount}`;
+    const spinnerText = `Faked Github Visitor Count for ${this.username} => ${fakedCount}`;
+    return spinnerText;
+  }
+
+  get failSpinnerText() {
+    const { count, fakedCount } = this;
+    const spinnerText = `Fail Faked Github Visitor Count for ${this.username} => ${fakedCount}`;
     return spinnerText;
   }
 
@@ -32,15 +38,24 @@ class GithubVisitor {
 
   async batchGET(username, count) {
     const badgeUrlForUser = `${this.badgeUrl}${username}`;
+    let successFaking = true;
     for (let i = 0; i < count; i++) {
-      const userAgent = new UserAgent();
-      const res = await axios.get(badgeUrlForUser, {
-        headers: { 'User-Agent': userAgent.toString() },
-      });
-      this.fakedCount += 1;
-      this.tickSpinner();
+      try {
+        const userAgent = new UserAgent();
+        const res = await axios.get(badgeUrlForUser, {
+          headers: { 'User-Agent': userAgent.toString() },
+        });
+        this.fakedCount += 1;
+        this.tickSpinner();
+      } catch (e) {
+        successFaking = false;
+        this.spinner.fail(`${this.failSpinnerText}`);
+        break;
+      }
     }
-    this.spinner.succeed(this.succeedSpinnerText);
+    if (successFaking) {
+      this.spinner.succeed(this.succeedSpinnerText);
+    }
   }
 
   async fake() {

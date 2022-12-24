@@ -39,6 +39,10 @@ if (count > maxCount) {
 }
 const githubVisitor = new GithubVisitor(username, count);
 
-(async () => {
+async function main() {
   await githubVisitor.fake();
+}
+
+(async () => {
+  main();
 })();

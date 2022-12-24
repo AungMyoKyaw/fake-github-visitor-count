@@ -2,9 +2,11 @@
 
 > fake github visitor count
 
+<img src="./assets/demo.gif" alt="fake-github-visitor-count" align="center" width="80%">
+
 ## Usage
 
-fake visitor count for github visitor count badge
+> fake visitor count for github visitor count badge
 
 u can install this badge like this
 

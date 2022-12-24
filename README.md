@@ -2,7 +2,9 @@
 
 > fake github visitor count
 
-<img src="./assets/demo.gif" alt="fake-github-visitor-count" align="center" width="80%">
+<div align="center">
+  <img src="./assets/demo.gif" alt="fake-github-visitor-count" align="center" width="80%" />
+</div>
 
 ## Usage
 

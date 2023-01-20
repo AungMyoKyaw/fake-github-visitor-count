@@ -12,10 +12,10 @@
 
 u can install this badge like this
 
-[![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=AungMyoKyaw)](https://github.com/AungMyoKyaw)
+[![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=AungMyoKyaw&style=for-the-badge)](https://github.com/AungMyoKyaw)
 
 ```txt
-[![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=AungMyoKyaw)](https://github.com/AungMyoKyaw)
+[![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=AungMyoKyaw&style=for-the-badge)](https://github.com/AungMyoKyaw)
 ```
 
 ### Installation
